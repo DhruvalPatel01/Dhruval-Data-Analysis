@@ -8,21 +8,25 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
       background-color: #f4f4f4;
-      padding: 40px 20px;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px 20px;
     }
 
     h1 {
       font-size: 2rem;
       color: black;
-      margin-top: 10px;
+      margin: 10px 0 5px;
     }
 
     h2 {
       font-size: 1.5rem;
       color: #333;
-      margin: 10px 0 20px;
+      margin: 0 0 20px;
     }
 
     .profile-img {
@@ -32,18 +36,82 @@
       border-radius: 50%;
       margin-bottom: 10px;
     }
+
+    .nav-bar {
+      background-color: #007BFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .nav-left {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #projects, #about, #contact {
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
 
-  <!-- Profile Image -->
-  <img src="Profile Pic.jpg" alt="Dhruval Patel" class="profile-img" />
+  <div class="container">
+    <img src="profile.jpg" alt="Dhruval Patel" class="profile-img" />
+    <h1>Dhruval Patel</h1>
+    <h2>Data Analyst | Turning data into insights</h2>
+  </div>
 
-  <!-- Name -->
-  <h1>Dhruval Patel</h1>
+  <div class="nav-bar">
+    <div class="nav-left">Portfolio</div>
+    <div class="nav-right">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 
-  <!-- Tagline -->
-  <h2>Data Analyst | Turning data into insights</h2>
+  <!-- Placeholder Sections -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Project highlights and links will go here.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>A short bio or description of your background.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Your email or contact form can go here.</p>
+  </section>
 
 </body>
 </html>
