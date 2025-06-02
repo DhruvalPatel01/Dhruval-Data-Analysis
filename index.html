@@ -20,13 +20,13 @@
     h1 {
       font-size: 2rem;
       color: black;
-      margin: 10px 0 0; /* reduced bottom margin */
+      margin: 10px 0 0;
     }
 
     .container h2 {
       font-size: 1.5rem;
       color: #333;
-      margin: 5px 0 20px; /* reduced top margin */
+      margin: 5px 0 20px;
     }
 
     .profile-img {
@@ -67,7 +67,7 @@
       text-decoration: underline;
     }
 
-    h2 {
+    h2.section-title {
       font-size: 1.5rem;
       color: #333;
       margin-top: 60px;
@@ -77,12 +77,59 @@
 
     section {
       padding: 30px 20px;
-      text-align: center;
       background-color: white;
       margin: 20px auto;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       max-width: 1000px;
+      text-align: center; /* default center */
+    }
+
+    /* Projects specific styles */
+    .project-card {
+      text-align: left; /* Left align all text inside the card */
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .project-images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 15px;
+    }
+
+    .project-images img {
+      width: 500px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+
+    .project-description {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .project-button {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -104,32 +151,31 @@
   </div>
 
   <!-- About Section -->
-  <h2>About</h2>
+  <h2 class="section-title">About</h2>
   <section id="about">
     <p>Hi all! I'm a data analyst passionate about transforming raw data into valuable insights to support smart decisions and build effective business models.</p>
     <p>With experience in business intelligence, marketing analytics, and healthcare projects, I bring a strong mix of analytical thinking and clear communication to every challenge.</p>
     <p>I work with tools like Excel, SQL, Python, Tableau, and Power BI to unlock the full potential of data — as showcased in the projects below.</p>
   </section>
 
-<!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-  
-<div class="project-card">
-    <h3>NHS Resource Utilisation</h3>
-    <div class="project-images">
-      <img src="nhs-1.jpg" alt="NHS Chart 1" class="half-img" />
-      <img src="nhs-2.jpg" alt="NHS Chart 2" class="half-img" />
+  <!-- Projects Section -->
+  <h2 class="section-title" id="projects">Projects</h2>
+  <section>
+    <div class="project-card">
+      <h3>NHS Resource Utilisation</h3>
+      <div class="project-images">
+        <img src="nhs-1.jpg" alt="NHS Chart 1" />
+        <img src="nhs-2.jpg" alt="NHS Chart 2" />
+      </div>
+      <p class="project-description">
+        An in-depth analysis of NHS resource usage, missed appointments, and service efficiency using Python, SQL, and data visualisation tools.
+      </p>
+      <a href="nhs-project.html" class="project-button">View Project</a>
     </div>
-    <p class="project-description">
-      An in-depth analysis of NHS resource usage, missed appointments, and service efficiency using Python, SQL, and data visualisation tools.
-    </p>
-    <a href="nhs-project.html" class="project-button">View Project</a>
-  </div>
-</section>
+  </section>
 
   <!-- Contact Section -->
-  <h2>Contact</h2>
+  <h2 class="section-title">Contact</h2>
   <section id="contact">
     <p>Your email or contact form can go here.</p>
   </section>
