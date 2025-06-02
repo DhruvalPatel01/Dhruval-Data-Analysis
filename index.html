@@ -97,16 +97,16 @@
 
     .project-images {
       display: flex;
-      gap: 10px;
+      gap: 0; /* no gap so images touch side-by-side */
       margin-bottom: 15px;
-      justify-content: center; /* center images horizontally */
+      justify-content: center;
     }
 
     .project-images img {
       width: 500px;
-      height: 300px;
+      height: 220px; /* flatter images */
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 0 0 8px 8px; /* rounded bottom corners only */
       box-shadow: 0 1px 6px rgba(0,0,0,0.1);
     }
 
