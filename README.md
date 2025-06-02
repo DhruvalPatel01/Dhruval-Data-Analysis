@@ -1,2 +1,1 @@
-# Data-Analysis
-A collection of my data analysis work.
+Main page of portfolio.
