@@ -136,6 +136,10 @@
     }
 
     /* Contact Section Styles */
+    #contact {
+      text-align: center; /* centers inline elements inside contact section */
+    }
+    
     #contact p.email {
       font-size: 1.1rem;
       color: #222;
@@ -147,22 +151,20 @@
 
     #contact .linkedin-button {
       display: inline-block;
-      background-color: #3600ff;
-      color: white;
-      font-weight: bold;
+      background-color: #d3d3d3; /* light grey */
+      color: black;              /* black text */
+      font-weight: normal;       /* non-bold */
       padding: 10px 30px;
       border-radius: 6px;
       text-decoration: none;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin: 0 auto;
-      text-align: center;
-      font-size: 1rem;
-      box-shadow: 0 2px 6px rgba(54,0,255,0.6);
+      margin-top: 10px;
+      box-shadow: none;          /* remove shadow for cleaner look */
     }
 
-    #contact .linkedin-button:hover {
-      background-color: #2300cc;
+  #contact .linkedin-button:hover {
+      background-color: #bfbfbf; /* slightly darker grey on hover */
     }
 
   </style>
